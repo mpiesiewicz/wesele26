@@ -1,0 +1,19 @@
+header {
+  position: relative;
+  width: 100%;
+}
+
+#top-photo {
+  max-width: 80%;
+  min-width: 400px;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #top-photo {
+    min-width: 300px;
+    max-width: 95%;
+  }
+}

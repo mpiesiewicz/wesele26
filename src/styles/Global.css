@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Codystar&family=Cormorant+Garamond&family=Roboto+Mono:wght@300;500&family=WindSong:wght@400;500&display=swap');
+
+:root {
+  --main-color: black;
+  --second-color: goldenrod;
+  --third-color: rgb(73, 64, 61);
+  --third-color-light: rgb(128, 125, 125);
+
+  --font-color-main: black;
+  --font-color-bright: white;
+  --font-color-second: rgb(73, 64, 61);
+  --font-color-third: rgb(128, 125, 125);
+
+  --main-bg-color: #ffffff;
+
+  --font-type-main: 'Cormorant Garamond', serif;
+  --font-type-handwriting: 'WindSong', cursive;
+  --font-type-special: 'Codystar', cursive;
+
+  --font-size-medium: 16px;
+  --font-size-giant: 2em;
+  --font-size-small: 14px;
+  --font-size-large: 25px;
+  --font-size-larger: 35px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-type-main);
+  line-height: 1.6;
+  color: var(--font-color-main);
+  background-color: var(--main-bg-color);
+  text-align: center;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+hr {
+  width: 10%;
+  border-color: var(--font-color-second);
+  margin: 50px auto;
+  border: 0.5px solid var(--font-color-third);
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--main-color);
+  margin: 50px 0;
+}
+
+h2 {
+  color: var(--third-color);
+  font-family: var(--font-type-handwriting);
+  font-size: var(--font-size-larger);
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: var(--font-size-large);
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-family: var(--font-type-main);
+}
+
+h4 {
+  color: var(--third-color-light);
+}
+
+p {
+  color: var(--third-color);
+  font-size: var(--font-size-medium);
+  line-height: 20px;
+  font-weight: 300;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#directions p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#directions a:link, 
+#media a:link {
+  color: var(--second-color);
+}
+
+#directions a:visited, 
+#media a:visited {
+  color: var(--second-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  :root {
+    --font-size-larger: 28px;
+    --font-size-large: 20px;
+  }
+}
+
+.afterparty-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.afterparty-container p {
+  max-width: 400px;
+}

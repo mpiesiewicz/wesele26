@@ -1,0 +1,39 @@
+nav {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav a {
+  font-family: var(--font-type-special);
+  font-weight: 800;
+  font-size: var(--font-size-medium);
+  color: var(--main-color);
+  text-decoration: none;
+  padding: 0 20px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+  color: var(--second-color);
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+    padding: 15px 0;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px 0;
+    margin: 5px 0;
+  }
+}

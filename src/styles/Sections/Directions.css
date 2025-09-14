@@ -1,0 +1,8 @@
+.map-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .map-container iframe {
+    max-width: 600px;
+  }

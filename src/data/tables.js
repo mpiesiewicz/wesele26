@@ -1,0 +1,80 @@
+export const tableData = [
+    { 
+      id: 1,
+      tableName: "Stolik 1",
+      tableData: [
+        { id: 0, initial: "Zofia R" },
+        { id: 1, initial: "Elżbieta K" },
+        { id: 2, initial: "Bogumił K" },
+        { id: 3, initial: "Tomasz R" },
+        { id: 4, initial: "Anna R" },
+        { id: 5, initial: "Marzena R" },
+        { id: 6, initial: "Marek R" },
+        { id: 7, initial: "Agnieszka S" },
+        { id: 8, initial: "Czarek S" },
+        { id: 9, initial: "" },
+        { id: 10, initial: "Witold P" },
+        { id: 11, initial: "Teresa P" },
+        { id: 12, initial: "Zbigniew P" },
+        { id: 13, initial: "Jacek P" },
+        { id: 14, initial: "Agnieszka P" },
+        { id: 15, initial: "Natalia G" },
+        { id: 16, initial: "Paweł G" },
+        { id: 17, initial: "Agnieszka D" },
+        { id: 18, initial: "Marcin B" },
+        { id: 19, initial: "" }
+      ]
+    },
+    { 
+      id: 2,
+      tableName: "Stolik 2",
+      tableData: [
+        { id: 0, initial: "Przemek G" },
+        { id: 1, initial: "Magda S" },
+        { id: 2, initial: "Mateusz R" },
+        { id: 3, initial: "Monika S" },
+        { id: 4, initial: "Łukasz W" },
+        { id: 5, initial: "Ada K" },
+        { id: 6, initial: "Marta O" },
+        { id: 7, initial: "Piotr M" },
+        { id: 8, initial: "" },
+        { id: 9, initial: "" },
+        { id: 10, initial: "Radek P" },
+        { id: 11, initial: "Magda K" },
+        { id: 12, initial: "Julita B" },
+        { id: 13, initial: "Michał P" },
+        { id: 14, initial: "Olga P" },
+        { id: 15, initial: "Kuba P" },
+        { id: 16, initial: "Maria K" },
+        { id: 17, initial: "Tomek K" },
+        { id: 18, initial: "" },
+        { id: 19, initial: "" }
+      ]
+    },
+    { 
+      id: 3,
+      tableName: "Stolik 3",
+      tableData: [
+        { id: 0, initial: "Marcin G" },
+        { id: 1, initial: "Renata G" },
+        { id: 2, initial: "Paweł M" },
+        { id: 3, initial: "Marta M" },
+        { id: 4, initial: "Oliwia G" },
+        { id: 5, initial: "Eliza G" },
+        { id: 6, initial: "Martyna G" },
+        { id: 7, initial: "Mateusz N" },
+        { id: 8, initial: "Sandra S" },
+        { id: 9, initial: "" },
+        { id: 10, initial: "Małgorzata P" },
+        { id: 11, initial: "Andrzej B" },
+        { id: 12, initial: "Anna B" },
+        { id: 13, initial: "Kuba P" },
+        { id: 14, initial: "Piotr P" },
+        { id: 15, initial: "Ola B" },
+        { id: 16, initial: "Natalia B" },
+        { id: 17, initial: "Natalia S" },
+        { id: 18, initial: "Dawid O" },
+        { id: 19, initial: "" }
+      ]
+    }
+  ];
