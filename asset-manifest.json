@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/wesele2026/static/css/main.fc51c173.css",
+    "main.js": "/wesele2026/static/js/main.e53be50c.js",
+    "static/media/wedding2.jpeg": "/wesele2026/static/media/wedding2.e4a13e9b042e5369d1b4.jpeg",
+    "index.html": "/wesele2026/index.html",
+    "main.fc51c173.css.map": "/wesele2026/static/css/main.fc51c173.css.map",
+    "main.e53be50c.js.map": "/wesele2026/static/js/main.e53be50c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc51c173.css",
+    "static/js/main.e53be50c.js"
+  ]
+}
