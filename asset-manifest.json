@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/wesele26/static/css/main.fc51c173.css",
-    "main.js": "/wesele26/static/js/main.87c3cbc7.js",
-    "static/media/wedding2.jpeg": "/wesele26/static/media/wedding2.8f38b78ca41905d8f854.jpeg",
-    "index.html": "/wesele26/index.html",
-    "main.fc51c173.css.map": "/wesele26/static/css/main.fc51c173.css.map",
-    "main.87c3cbc7.js.map": "/wesele26/static/js/main.87c3cbc7.js.map"
+    "main.css": "/static/css/main.fc51c173.css",
+    "main.js": "/static/js/main.c85d3cb5.js",
+    "static/media/wedding2.jpeg": "/static/media/wedding2.8f38b78ca41905d8f854.jpeg",
+    "index.html": "/index.html",
+    "main.fc51c173.css.map": "/static/css/main.fc51c173.css.map",
+    "main.c85d3cb5.js.map": "/static/js/main.c85d3cb5.js.map"
   },
   "entrypoints": [
     "static/css/main.fc51c173.css",
-    "static/js/main.87c3cbc7.js"
+    "static/js/main.c85d3cb5.js"
   ]
 }
