@@ -17,11 +17,11 @@ function App() {
       <main>
         <Home />
         <Directions />
-        <Plan />
-        <Tables />
-        <Afterparty />
-        <Accommodation />
-        <Media />
+        {/* <Plan /> */}
+        {/* <Tables /> */}
+        {/* <Afterparty /> */}
+        {/* <Accommodation /> */}
+        {/* <Media /> */}
       </main>
       <Footer />
     </div>

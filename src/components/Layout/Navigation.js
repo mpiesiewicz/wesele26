@@ -13,7 +13,7 @@ const Navigation = () => {
       <a href="#tables" onClick={(e) => scrollToSection(e, 'tables')}>Rozkład stołów</a>
       <a href="#afterparty" onClick={(e) => scrollToSection(e, 'afterparty')}>Poprawiny</a>
       <a href="#accommodation" onClick={(e) => scrollToSection(e, 'accommodation')}>Noclegi</a>
-      <a href="#media" onClick={(e) => scrollToSection(e, 'media')}>Zdjęcia</a>
+      <a href="#media" onClick={(e) => scrollToSection(e, 'media')}>Zdjecia</a>
     </nav>
   );
 };
