@@ -165,10 +165,10 @@ const Directions = () => {
         <h3>Jak dojechać:</h3>
         <ul>
           <li>Z autostrady A2 zjedź zjazdem Poznań Wschód,</li>
-          <li>wjedź na trasę S5 w kierunku Wrocławia,</li>
+          <li>wjedź na trasę S5 w kierunku Bydgoszczy,</li>
           <li>zjedź zjazdem Kleszczewo,</li>
           <li>kieruj się na Biskupice (kierunek Środa Wielkopolska),</li>
-          <li>w Biskupicach jedź ulicą Krótką.</li>
+          <li>w Biskupicach jedź ulicą Główną, następnie skręć w Aleję Siedmiu Drzew.</li>
         </ul>
       </div>
     </section>
