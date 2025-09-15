@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.0b182992.css",
-    "main.js": "/static/js/main.a0550d1f.js",
+    "main.js": "/static/js/main.aede8207.js",
     "static/media/wedding2.jpeg": "/static/media/wedding2.8f38b78ca41905d8f854.jpeg",
     "index.html": "/index.html",
     "main.0b182992.css.map": "/static/css/main.0b182992.css.map",
-    "main.a0550d1f.js.map": "/static/js/main.a0550d1f.js.map"
+    "main.aede8207.js.map": "/static/js/main.aede8207.js.map"
   },
   "entrypoints": [
     "static/css/main.0b182992.css",
-    "static/js/main.a0550d1f.js"
+    "static/js/main.aede8207.js"
   ]
 }
