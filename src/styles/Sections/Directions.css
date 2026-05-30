@@ -1,24 +1,128 @@
-.map-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-.map-container iframe {
-    max-width: 600px;
-  }
+.directions-address-card {
+  display: inline-block;
+  margin: 0 auto 1.5rem;
+  padding: 0.45rem 1.2rem;
+  border: 1px dashed var(--third-color-light);
+  border-radius: 6px;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--third-color);
+  text-decoration: none;
+  font-family: var(--font-type-main);
+  transition: background 0.2s, color 0.2s;
+}
 
-.directions-text {
-  margin-top: 30px;
+.directions-address-card:hover {
+  background: var(--second-color);
+  color: #fff;
+  border-color: var(--second-color);
+}
+
+.directions-intro {
+  max-width: 480px;
+  margin: 0 auto 1.8rem;
+  font-family: var(--font-type-main);
+  font-size: 1rem;
+  color: var(--third-color);
+  line-height: 1.75;
 }
 
 .map-container {
-  max-width: 600px; /* keeps it at most 600px wide */
-  margin: 0 auto; /* centers it horizontally */
+  max-width: 560px;
+  margin: 0 auto 2rem;
 }
 
 .wedding-map {
-  width: 100%;        /* fills container */
-  height: 400px;      /* REQUIRED! without this, map won't render */
-  border-radius: 12px;
+  width: 100%;
+  height: 380px;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);}
+  border: 1px solid var(--third-color-light);
+  display: block;
+}
+
+.map-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 0.8rem;
+  color: var(--third-color-light);
+  font-family: var(--font-type-main);
+  font-size: 0.9rem;
+}
+
+.directions-link {
+  color: var(--second-color);
+  text-decoration: none;
+}
+
+.directions-link:hover {
+  text-decoration: underline;
+}
+
+.directions-steps {
+  max-width: 480px;
+  margin: 0 auto;
+  border: 1px solid var(--third-color-light);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.directions-steps-header {
+  background: var(--third-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-type-main);
+  font-style: italic;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.directions-steps ol {
+  list-style: none;
+  counter-reset: steps;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.directions-steps li {
+  counter-increment: steps;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.4rem 1rem;
+  font-family: var(--font-type-main);
+  font-size: 0.95rem;
+  color: var(--third-color);
+  line-height: 1.5;
+  border-bottom: 1px dashed var(--third-color-light);
+}
+
+.directions-steps li:last-child {
+  border-bottom: none;
+}
+
+.directions-steps li::before {
+  content: counter(steps);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--third-color-light);
+  min-width: 1.2rem;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .wedding-map {
+    height: 300px;
+  }
+
+  .directions-steps {
+    text-align: left;
+  }
+}

@@ -1,11 +1,21 @@
 import React from 'react';
+import { useLang } from '../../context/LangContext';
 
 const Accommodation = () => {
+  const { t } = useLang();
+  const ta = t.accommodation;
+
   return (
     <section id="accommodation">
-      <h2>Noclegi</h2>
-      <p>Gwarantujemy noclegi dla wszystkich w noc weselną z <b>piątku na sobotę</b>.</p>
-      <p>Zameldowanie jest od godziny <b>15:00</b> w recepcji hotelowej, natomiast dla gości przyjeżdżających w piątek, postaramy się skrócic ten czas.</p>
+      <h2>{ta.title}</h2>
+      <div className="info-card">
+        {ta.rows.map((row, i) => (
+          <div key={i} className="info-card-row">
+            <span className="info-card-label">{row.label}</span>
+            <span>{row.value}</span>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

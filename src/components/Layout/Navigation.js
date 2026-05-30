@@ -1,19 +1,33 @@
 import React from 'react';
 import { useScroll } from '../../hooks/useScroll';
+import { useLang } from '../../context/LangContext';
 import '../../styles/Components/Navigation.css';
 
 const Navigation = () => {
   const { scrollToSection } = useScroll();
+  const { lang, setLang, t } = useLang();
 
   return (
     <nav>
-      <a href="#home" onClick={(e) => scrollToSection(e, 'home')}>Home</a>
-      <a href="#directions" onClick={(e) => scrollToSection(e, 'directions')}>Dojazd</a>
-      {/* <a href="#plan" onClick={(e) => scrollToSection(e, 'plan')}>Plan dnia</a> */}
-      {/* <a href="#tables" onClick={(e) => scrollToSection(e, 'tables')}>Rozkład stołów</a> */}
-      {/* <a href="#afterparty" onClick={(e) => scrollToSection(e, 'afterparty')}>Poprawiny</a> */}
-      {/* <a href="#accommodation" onClick={(e) => scrollToSection(e, 'accommodation')}>Noclegi</a> */}
-      {/* <a href="#media" onClick={(e) => scrollToSection(e, 'media')}>Zdjecia</a> */}
+      <div className="nav-links">
+        <a href="#home" onClick={(e) => scrollToSection(e, 'home')}>{t.nav.home}</a>
+        <a href="#ceremony" onClick={(e) => scrollToSection(e, 'ceremony')}>{t.nav.ceremony}</a>
+        <a href="#directions" onClick={(e) => scrollToSection(e, 'directions')}>{t.nav.directions}</a>
+        <a href="#tables" onClick={(e) => scrollToSection(e, 'tables')}>{t.nav.tables}</a>
+        <a href="#accommodation" onClick={(e) => scrollToSection(e, 'accommodation')}>{t.nav.accommodation}</a>
+        <a href="#afterparty" onClick={(e) => scrollToSection(e, 'afterparty')}>{t.nav.afterparty}</a>
+      </div>
+      <div className="nav-lang">
+        {['pl', 'en', 'de'].map(l => (
+          <button
+            key={l}
+            className={`nav-lang-btn${lang === l ? ' active' : ''}`}
+            onClick={() => setLang(l)}
+          >
+            {l === 'pl' ? '🇵🇱' : l === 'en' ? '🇬🇧' : '🇩🇪'}
+          </button>
+        ))}
+      </div>
     </nav>
   );
 };
